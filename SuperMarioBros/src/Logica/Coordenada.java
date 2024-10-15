@@ -1,29 +1,29 @@
 package Logica;
 
 public class Coordenada {
-    private double x;
-    private double y;
+    private int x;
+    private int y;
 
-    public Coordenada(double x, double y) {
+    public Coordenada(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
     // Getters
-    public double getX() {
+    public int getX() {
         return x;
     }
 
-    public double getY() {
+    public int getY() {
         return y;
     }
 
     // Setters (opcional, si quieres permitir la modificación de las coordenadas)
-    public void setX(double x) {
+    public void setX(int x) {
         this.x = x;
     }
 
-    public void setY(double y) {
+    public void setY(int y) {
         this.y = y;
     }
 
@@ -34,8 +34,8 @@ public class Coordenada {
 
     // Método para calcular la distancia a otra coordenada
     public double distancia(Coordenada otra) {
-        double dx = this.x - otra.x;
-        double dy = this.y - otra.y;
+        int dx = this.x - otra.x;
+        int dy = this.y - otra.y;
         return Math.sqrt(dx * dx + dy * dy);
     }
 }

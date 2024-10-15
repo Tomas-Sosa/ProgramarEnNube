@@ -1,35 +1,20 @@
 package Logica;
 
-public class HitBox {
+public class Hitbox{
+	protected int alto;
+	protected int ancho;
 	
-	private Coordenada punto;
-	private int altura;
-	private int ancho;
-	
-	public HitBox(Coordenada coor, int h, int b) {
-		punto= coor;
-		setAltura(h);
-		setAncho(b);
-		
+	public Hitbox(int alto,int ancho) {
+		this.alto = alto;
+		this.ancho = alto;
 	}
-
+	
+	public int getAlto() {
+		return alto;
+	}
+	
 	public int getAncho() {
-		return ancho;
+		return alto;
 	}
-
-	public void setAncho(int ancho) {
-		this.ancho = ancho;
-	}
-
-	public int getAltura() {
-		return altura;
-	}
-
-	public void setAltura(int altura) {
-		this.altura = altura;
-	}
-	public Coordenada getpunto() {
-		return punto;
-	}
-
+	
 }
